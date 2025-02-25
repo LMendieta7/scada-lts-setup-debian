@@ -182,18 +182,17 @@ download_and_unzip
 sleep 1
 # Gather MySQL installation details
 get_mysql_details
-sleep 2
+sleep 3
 
 echo "Starting MySQL installation..."
 run_mysql_installer
-sleep 12
+sleep 10
 # getting tomcat information from user
 get_tomcat_details
-sleep 3
 # Install Tomcat
 echo "Starting Tomcat installation..."
 run_tomcat_installer
-sleep 12
+sleep 15
 
 # echo "Creating systemd services for MySQL and Tomcat..."
 # bash "$(dirname "$0")/create_systemd_services.sh"
@@ -202,4 +201,3 @@ check_scadalts_running
 echo "SCADA-LTS installation process completed successfully!"
 echo
 
-exit 0
