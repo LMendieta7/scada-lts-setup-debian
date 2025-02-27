@@ -27,3 +27,4 @@ Clone or download the repository to your Debian machine. You can download the sc
 ```bash
 wget https://raw.githubusercontent.com/LMendieta7/scada-lts-setup-debian/main/install_scada.sh
 
+### 1. Download the Script
