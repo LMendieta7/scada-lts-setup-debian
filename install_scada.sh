@@ -30,7 +30,7 @@ install_dependencies() {
   apt install -y libaio1 libnuma1 unzip wget sudo  
 
   echo "Adding regular user to sudo group..."
-  usermod -aG sudo $REGULAR_USER
+  /usr/sbin/usermod -aG sudo $REGULAR_USER
 
   echo "Creating SCADA directory..."
   mkdir -p "$SCADA_DIR"
