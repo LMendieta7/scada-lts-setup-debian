@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script automates the installation of **SCADA-LTS** v2.6.18 on **Debian 12**, supporting both **VM** and LXC environments. It handles all necessary setup steps, including installing dependencies, configuring MySQL and Tomcat, and creating a dedicated SCADA directory. For LXC installations, you must create a non-root user before running the script.
+This script automates the installation of **SCADA-LTS** v2.6.18 on **Debian 12**, supporting both VM and LXC environments. It handles all necessary setup steps, including installing dependencies, configuring MySQL and Tomcat, and creating a dedicated SCADA directory. For LXC installations, you must create a non-root user before running the script.
 
 ## Features
 
