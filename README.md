@@ -11,7 +11,9 @@ This script automates the installation of **SCADA-LTS** v2.6.18 on **Debian 12**
 - **Regular User Setup**: Adds the specified regular user to the sudo group for proper permissions.
 - **SCADA Directory Creation**: Creates a dedicated directory for SCADA-LTS at `/usr/local/scada`.
 - **Handles `deb cdrom` Issue**: Automatically comments out the `deb cdrom` line in `/etc/apt/sources.list` to prevent installation errors.
-
+- **MySQL and Tomcat Input:** After running the script, you will be prompted to enter MySQL and Tomcat configuration details. You can **press the Enter key** to accept the default values provided in the official SCADA-LTS tutorial.
+-**Service Confirmation**: After installation, the script will confirm when MySQL and Tomcat services are running correctly and provide a link to access SCADA-LTS via a browser.
+  
 ## Prerequisites
 
 - **Debian 12** (or similar Debian-based distributions).
@@ -43,6 +45,12 @@ Once the script is executable, run it as root using `su -c`:
 ```bash
 su -c "./install_scada.sh"
 ```
+### 4. Enter MySQL and Tomcat Details
+During the installation process, the script will prompt you for MySQL and Tomcat configuration details. Press **Enter** to accept the default values provided in the official SCADA-LTS tutorial.
+
+### 5. Service Confirmation
+Once the script finishes, it will display a message indicating when the MySQL and Tomcat services are running correctly. It will also provide a link to access SCADA-LTS in your browser
+
 ### Official SCADA-LTS GitHub Repository
 
 For the official SCADA-LTS installation scripts and further details, please visit the [SCADA-LTS GitHub Repository.](https://github.com/SCADA-LTS/linux-installer)
